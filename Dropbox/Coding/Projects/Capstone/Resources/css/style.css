@@ -1,0 +1,515 @@
+html, body {
+  height: 100%;
+  font-size: 16px;
+}
+
+body {
+  font-family: helvetica;
+}
+
+/*The below will need to be reviewed once spec is available*/
+
+h1 {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+h3 {
+  font-weight: bold;
+  font-size: 1.25rem;
+  padding-bottom: 1rem;
+  padding-top: 0.5rem;
+}
+
+
+/*Overriding defaults in links*/
+a{
+  color:inherit;
+  text-decoration: none;
+}
+
+/*Header block*/
+#header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 64px;
+  background-color: white;
+}
+
+/*These need filling in when spec available*/
+
+#Colmar {
+
+}
+
+#Adacemy {
+
+}
+
+#LogoplusName {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#logo {
+  max-height:32px;
+  width: auto;
+  padding-left: 24px;
+}
+
+#navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  width: 450px;
+  height: 64px;
+  margin-left: auto;
+  margin-right: 24px;
+}
+
+#AltNavigation{   /*This is for the mobile version*/
+  display: none;
+}
+
+#navigation li{
+  display:inline;
+  padding-left: 16px;
+}
+
+/*Banner block*/
+
+#Banner{
+  width: 100%;
+  margin: 0 auto;
+  background-color: silver; /*Need to update this and other background colors later*/
+  display:flex;
+  align-items: center;
+}
+
+#BannerImage {
+  padding: 32px 24px;
+  width:100%;
+  box-sizing: border-box;
+}
+
+.ImageContainer {
+  width:60%;
+  box-sizing: border-box;
+}
+
+#BannerRight{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 35%;
+  padding: 32px 16px;
+}
+
+#BannerRight p {
+  padding-bottom: 32px;
+  width:60%;
+  line-height: 1.4;
+}
+
+#BannerRight h1 { /*need to set settings for headings once spec available */
+  width: 60%;
+  padding-bottom: 32px;
+}
+
+#Button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: dimgray;
+  width:60%;
+  text-align: center;
+  color: white;
+}
+
+/*Information block - same code used for Thesis Block with a couple of adjustments*/
+
+.MainBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-sizing: border-box;
+  overflow:hidden;
+  background-color: lightgray;
+}
+
+.MainBlockLeft {
+  width:60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.MainBlockLeft h2 { /*need to set settings for headings once spec available*/
+  margin-top:0;
+}
+
+.InfoTextLeft {
+  margin:24px 32px;
+}
+
+.InfoTextLeft p {
+  margin-top:24px;
+  margin-bottom: 32px;
+}
+
+.InfoTextLeft span {
+  padding-bottom: 32px;
+  box-sizing: border-box;
+}
+
+.LargeContainer {
+  width:100%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.MainImageLeft {
+  padding: 32px 24px;
+  object-fit: contain;
+  width:100%;
+  box-sizing: border-box;
+}
+
+.MainBlockRight {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width:40%;
+  margin-top: 16px;
+}
+
+.InfoBlocks {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.InfoImage {
+  width: 100%;
+  object-fit: contain;
+  padding: 16px;
+  box-sizing: border-box;
+}
+
+.SmallContainer {
+  width: 35%;
+  height: auto;
+  box-sizing: border-box;
+}
+
+.InfoText {
+  width:65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.InfoText h3 {   /*need to set settings for headings once spec is available*/
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.InfoText p {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+
+.ReadMore {
+  color:blue;
+  padding-top: 8px;
+  padding-bottom: 8px;}
+
+.InfoBlocks:nth-child(3) {
+  background-color: gray;
+}
+
+/*Courses Block*/
+
+#CourseBlock {
+  width:100%;
+  background-color: silver;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom:32px;
+}
+
+#CourseBlock h2 {  /*need to set settings for headings once spec is available*/
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+#CoursesGroup {
+  width: calc(100vw - 112px);  /*This to create margin round block of 72px each side but 16px comes from .Course*/
+  display: flex;
+  flex-direction: row;
+  flex-wrap:wrap;
+  box-sizing: border-box;
+}
+
+.Course {
+  box-sizing:border-box;
+  width:33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 16px 32px 16px;
+}
+
+.CourseImage {
+  object-fit: contain;
+  max-width: 100%;
+}
+
+.CourseText {
+  padding-left: 16px;
+  padding-top:16px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.CourseText h3 {   /*need to set settings for headings once spec is available*/
+
+}
+
+.CourseText span {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.CourseText p {
+  margin-bottom: 24px;
+}
+
+/*This sets code for Thesis Exhibit and background colour for first block in Thesis right hand block*/
+
+#ThesisBlock{
+  display: flex;
+  flex-direction: column;
+  background-color: lightgray;
+}
+
+#Thesis {
+  padding-top: 32px;
+  padding-bottom: 0;  /*this is because MainBlock has the necessary padding*/
+  width:100%;
+  text-align: center;
+}
+
+
+#FirstBlock {
+  background-color: gray;
+  margin-top:16px;
+}
+
+/*Footer*/
+#Footer {
+  display: flex;
+  justify-content: space-between;
+  height: 64px;
+}
+
+#Footnote li{
+  display:inline;
+  padding-right: 16px;
+}
+
+#Copyright, #Footnote {
+  padding-top:16px;
+  padding-bottom-32px;
+}
+
+#Copyright {
+  padding-left:24px;
+}
+
+@media only screen and (max-width: 470px) {  /*For mobiles*/
+
+
+/*Header Block*/
+
+#Colmar, #Academy {
+  display: none;
+}
+
+#header {
+  justify-content: space-between;
+}
+
+#navigation {
+  display: none;
+}
+
+#AltNavigation {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  width: 85%;
+  align-items: center;
+}
+
+#AltNavigation ul {
+  width:100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+/*Banner Block*/
+
+#Banner {
+  flex-direction: column;
+}
+
+.ImageContainer {
+  width:100%;
+}
+
+#BannerImage {
+  padding: 0;
+}
+
+#BannerRight{
+  align-items: flex-start;
+  padding: 32px 24px;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+
+#BannerRight p {
+  padding-bottom: 24px;
+  width:100%;
+  line-height: 1;
+}
+
+#BannerRight h1 { /*need to set settings for headings once spec available! */
+  width: 100%;
+}
+
+#Button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: dimgray;
+  width:100%;
+  text-align: center;
+  color: white;
+}
+
+/*Main Block*/
+#InfoBlockLeft {
+  display: none;
+}
+
+#InfoBlockRight {
+  width:100%;
+}
+
+.InfoBlocks:nth-child(3) {
+  background-color: inherit;
+}
+
+.MainBlockLeft {
+  width:100%;
+}
+
+.InfoTextLeft {
+  display: none;
+}
+
+/*Courses Block*/
+
+#CoursesGroup {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  margin: 0 16px 24px 16px;
+}
+
+.Course {
+  width:100%;
+  padding-bottom: 0;
+}
+
+.CourseImage {
+  display: none;
+}
+
+.CourseText span,p{
+  display: none;
+}
+
+.CourseText {
+  box-sizing: border-box;
+  width:100%;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.CourseText h3 {
+  padding:16px 16px 24px 16px;
+}
+
+#CourseBlock {
+  padding-bottom: 0;
+}
+
+#CourseBlock h2 {
+  padding-bottom: 16px;
+}
+
+/*Special settings for Thesis Block*/
+
+#ThesisBlockRight {
+  display: none;
+}
+
+#ThesisImageLeft{
+  padding:0;
+}
+
+#Thesis {
+  padding-bottom: 16px;
+}
+
+/*Footer Block*/
+
+#Footer {
+  height:auto;
+}
+
+#Copyright {
+  padding-bottom: 16px;
+}
+
+#Footnote {
+  display: none;
+}
+
+}  /*End of Media Query for mobile */
+
+</html>
